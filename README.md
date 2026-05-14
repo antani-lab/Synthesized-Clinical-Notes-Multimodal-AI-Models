@@ -71,8 +71,8 @@ The folder includes the csv files used to develop methods.
 - labels_test.csv: the IDs of the samples used for testing, with the corresponding labels.
 
 Check the original repositories for a full perspective on metadata. 
-The folder includes also a file including metadata collected from original repositories: classes_subclasses_metadata_mapping.csv. 
-The file includes multiple column: 
+The folder includes also a file including metadata collected from original repositories: classes_subclasses_metadata_mapping.csv.
+The file includes multiple column, with the last two aiming to be propose a common set of concepts for lesions' classes and subclasses, aligning terminology across datasets: 
 -   sample ID: str 
 -   label: int (numeric)
 -   malignacy: benign, pre-cancerous, malignant
