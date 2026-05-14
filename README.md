@@ -24,7 +24,7 @@ All datasets are publicly available:
 -   [Hospital Italiano Buenos Aires](https://api.isic-archive.com/collections/251/)
 -   [PAD UFES 20](https://data.mendeley.com/datasets/zr7vgbcyr2/1)
 -   [SD198](https://huggingface.co/datasets/resyhgerwshshgdfghsdfgh/SD-198)
--   MSK: composed from [MSK1](https://api.isic-archive.com/collections/289/), [MSK2](https://api.isic-archive.com/collections/290/), [MSK3](https://api.isic-archive.com/collections/288/), [MSK4[(https://api.isic-archive.com/collections/287/), [MSK5](https://api.isic-archive.com/collections/286/)
+-   MSK: composed from [MSK1](https://api.isic-archive.com/collections/289/), [MSK2](https://api.isic-archive.com/collections/290/), [MSK3](https://api.isic-archive.com/collections/288/), [MSK4](https://api.isic-archive.com/collections/287/), [MSK5](https://api.isic-archive.com/collections/286/)
 -   [Milk10k](https://challenge.isic-archive.com/landing/milk10k/)
 -   [PH2](https://www.fc.up.pt/addi/ph2%20database.html)
 
