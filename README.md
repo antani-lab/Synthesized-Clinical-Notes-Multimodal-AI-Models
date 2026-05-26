@@ -52,26 +52,6 @@ Text  → PubMedBERT       → Linear → Shared Embedding Space → Classifier
 
 ## Datasets
 
-| Dataset | Split Used |
-|---|---|
-| BCN20000 | Train / Test |
-| derm12345 | Train / Test |
-| Derm7pt | Train / Test |
-| DermNet | Train / Test |
-| MRA_MIDAS | Train / Test |
-| FLUO_SC | Train / Test |
-| HAM10000 | Test |
-| Fitzpatrick17k | Test |
-| Hospital Italiano Buenos Aires | Test |
-| PAD UFES 20 | Test |
-| SD198 | Test |
-| SKINL2 | Test |
-| MSK | Test |
-| Milk10k_clinic | Test |
-| Milk10k_dermo | Test |
-
-**Class labels (8-class):** actinic keratosis, basal cell carcinoma, seborrheic keratosis, dermatofibroma, melanocytic nevus, melanoma, squamous cell carcinoma, vascular lesion
-
 All datasets are **publicly available**:
 -   [BCN20000](https://api.isic-archive.com/collections/249/) |Train / Test|
 -   [derm12345](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DAXZ7P) |Train / Test|
@@ -88,6 +68,8 @@ All datasets are **publicly available**:
 -   MSK: composed from [MSK1](https://api.isic-archive.com/collections/289/), [MSK2](https://api.isic-archive.com/collections/290/), [MSK3](https://api.isic-archive.com/collections/288/), [MSK4[(https://api.isic-archive.com/collections/287/), [MSK5](https://api.isic-archive.com/collections/286/) |Test|
 -   [Milk10k](https://challenge.isic-archive.com/landing/milk10k/) |Test|
 -   [PH2](https://www.fc.up.pt/addi/ph2%20database.html) |Test|
+
+**Class labels (8-class):** actinic keratosis, basal cell carcinoma, seborrheic keratosis, dermatofibroma, melanocytic nevus, melanoma, squamous cell carcinoma, vascular lesion
 
 ---
 
@@ -143,9 +125,10 @@ The elements reported in bold are variables, changing at run-time execution. cur
 ### L
 The metadata-based prompt strategy, based on querying a LLM.
 Clinical notes obtained from multiple prompts are combined during training.
-Prompt 1 (L1): The LLM selects predefined options for symmetry, border type, colors, and dermoscopic structures (e.g., pigment network, dots), expressed as bullet points, ensuring consistency and minimal hallucination. The prompt is split into two roles: instruction (system) and question (user), following modern chat model structures, where the system includes high-level directives (e.g. behavior, constraints, rules), while the user includes the actual query or task. It is used with gpt-4o-mini, MedGemma, SkinGPT4, DermLip. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty. 
-instruction = “You are a dermatologist. Your task is to describe the content in the image, using dermatologic terminology. You have to compile the structured report, using only the options provided among brackets. Report the category (Symmetric lesion, Border lesion, Color lesion, Dermoscopic structure). Your reply should be within 250 words. Underline explicitly that the lesion is current_superclass and includes a current_class (class_subclass_suffix) and it includes current_description. specific_class_sentence. Do not summarize at the end."
-question = "Report the following characteristics, choosing only the options among brackets, using the notation letter) (.e.g A), B)):
+#### Prompt 1 (L1): 
+The LLM selects predefined options for symmetry, border type, colors, and dermoscopic structures (e.g., pigment network, dots), expressed as bullet points, ensuring consistency and minimal hallucination. The prompt is split into two roles: instruction (system) and question (user), following modern chat model structures, where the system includes high-level directives (e.g. behavior, constraints, rules), while the user includes the actual query or task. It is used with gpt-4o-mini, MedGemma, SkinGPT4, DermLip. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty. 
+**instruction** = “You are a dermatologist. Your task is to describe the content in the image, using dermatologic terminology. You have to compile the structured report, using only the options provided among brackets. Report the category (Symmetric lesion, Border lesion, Color lesion, Dermoscopic structure). Your reply should be within 250 words. Underline explicitly that the lesion is current_superclass and includes a current_class (class_subclass_suffix) and it includes current_description. specific_class_sentence. Do not summarize at the end."
+**question** = "Report the following characteristics, choosing only the options among brackets, using the notation letter) (.e.g A), B)):
 A)  Asymmetry (only for the skin lesion)
 Symmetric: Color and structure are mirrored across both axes.
 Asymmetric: Uneven color or structure.
@@ -161,9 +144,11 @@ Pigment network: Reticular or mesh-like pigmentation.
 Branched streaks: Irregular, atypical branching lines.
 Dots: Small, round dark spots.
 Globules: Larger, clustered round pigmented areas.”
-Prompt 2 (L2): similar to Prompt 1, it includes less details describing the lesion to characterize it. It is used with gpt-4o-mini, MedGemma, SkinGPT4, DermLip. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty.
-instruction = "You are a dermatologist. Your task is to describe the content in the uploaded, using medical terminology. Be stick to what you identify, do not explain nature of diseases and do not imply. Your reply should be within 250 words. Underline explicitly that the lesion includes a current_class (class_subclass_suffix), (current_superclass) and some morphological characteristics are current_description. specific_class_sentence. Do not summarize at the end."
-question = “What Characteristics of the dermatoscopic structure of the skin lesions you identify, among:
+
+#### Prompt 2 (L2): 
+similar to Prompt 1, it includes less details describing the lesion to characterize it. It is used with gpt-4o-mini, MedGemma, SkinGPT4, DermLip. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty.
+**instruction** = "You are a dermatologist. Your task is to describe the content in the uploaded, using medical terminology. Be stick to what you identify, do not explain nature of diseases and do not imply. Your reply should be within 250 words. Underline explicitly that the lesion includes a current_class (class_subclass_suffix), (current_superclass) and some morphological characteristics are current_description. specific_class_sentence. Do not summarize at the end."
+**question** = “What Characteristics of the dermatoscopic structure of the skin lesions you identify, among:
 1) Type of Lesion: The report might describe whether the lesion is benign (e.g., mole, freckle) or suspicious for malignancy (e.g., melanoma, basal cell carcinoma). 
 Common types of lesions include: 
 Macules: Flat spots on the skin. 
