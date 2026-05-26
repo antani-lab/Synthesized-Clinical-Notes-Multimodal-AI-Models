@@ -173,12 +173,15 @@ Possible prompt options (randomly chosen):
 - “Take a look at this image and describe what you notice.”,
 -  “Please provide a detailed description of the picture.”,
 -  “Could you describe the contents of this image for me?”
-instruction = “Underline explicitly that the lesion includes a current_class (class_subclass_suffix), current_superclass and some morphological characteristics are current_description. specific_class_sentence.”
+
+**instruction** = “Underline explicitly that the lesion includes a current_class (class_subclass_suffix), current_superclass and some morphological characteristics are current_description. specific_class_sentence.”
 
 ### Prompt DermLip
 Additional prompts are used for DermLip, aiming to mimic the ones used in the original publication. It includes a version with metadata and without metadata: the component instruction is removed in the latter case. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty.
-prompt = "Describe the skin lesion concisely (morphology, color, scale, border, location) in one sentence. Conclude with the most likely diagnosis 250 words)."
-instruction = “Underline explicitly that the lesion includes a current_class (class_subclass_suffix), current_superclass and some morphological characteristics are current_description. specific_class_sentence.”
+
+**prompt** = "Describe the skin lesion concisely (morphology, color, scale, border, location) in one sentence. Conclude with the most likely diagnosis 250 words)."
+
+**instruction** = “Underline explicitly that the lesion includes a current_class (class_subclass_suffix), current_superclass and some morphological characteristics are current_description. specific_class_sentence.”
 
 ---
 
