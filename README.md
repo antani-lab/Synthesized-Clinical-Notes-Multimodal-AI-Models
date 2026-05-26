@@ -127,7 +127,9 @@ The metadata-based prompt strategy, based on querying a LLM.
 Clinical notes obtained from multiple prompts are combined during training.
 #### Prompt 1 (L1): 
 The LLM selects predefined options for symmetry, border type, colors, and dermoscopic structures (e.g., pigment network, dots), expressed as bullet points, ensuring consistency and minimal hallucination. The prompt is split into two roles: instruction (system) and question (user), following modern chat model structures, where the system includes high-level directives (e.g. behavior, constraints, rules), while the user includes the actual query or task. It is used with gpt-4o-mini, MedGemma, SkinGPT4, DermLip. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty. 
+
 **instruction** = “You are a dermatologist. Your task is to describe the content in the image, using dermatologic terminology. You have to compile the structured report, using only the options provided among brackets. Report the category (Symmetric lesion, Border lesion, Color lesion, Dermoscopic structure). Your reply should be within 250 words. Underline explicitly that the lesion is current_superclass and includes a current_class (class_subclass_suffix) and it includes current_description. specific_class_sentence. Do not summarize at the end."
+
 **question** = "Report the following characteristics, choosing only the options among brackets, using the notation letter) (.e.g A), B)):
 A)  Asymmetry (only for the skin lesion)
 Symmetric: Color and structure are mirrored across both axes.
@@ -147,7 +149,9 @@ Globules: Larger, clustered round pigmented areas.”
 
 #### Prompt 2 (L2): 
 similar to Prompt 1, it includes less details describing the lesion to characterize it. It is used with gpt-4o-mini, MedGemma, SkinGPT4, DermLip. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty.
+
 **instruction** = "You are a dermatologist. Your task is to describe the content in the uploaded, using medical terminology. Be stick to what you identify, do not explain nature of diseases and do not imply. Your reply should be within 250 words. Underline explicitly that the lesion includes a current_class (class_subclass_suffix), (current_superclass) and some morphological characteristics are current_description. specific_class_sentence. Do not summarize at the end."
+
 **question** = “What Characteristics of the dermatoscopic structure of the skin lesions you identify, among:
 1) Type of Lesion: The report might describe whether the lesion is benign (e.g., mole, freckle) or suspicious for malignancy (e.g., melanoma, basal cell carcinoma). 
 Common types of lesions include: 
