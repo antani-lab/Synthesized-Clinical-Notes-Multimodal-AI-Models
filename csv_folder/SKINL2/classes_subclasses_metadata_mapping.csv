@@ -1,0 +1,212 @@
+0101_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0121_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0124_1_Dermatoscopic,6,malignant,melanoma,melanoma + amelanotic melanoma,-,melanoma,melanoma
+0124_2_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0132_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0137_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0138_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0187_Dermatoscopic,6,malignant,melanoma,lentigo maligna melanoma,-,melanoma,lentigo maligna
+0195_Dermatoscopic,6,malignant,melanoma,metastatic melanoma,-,melanoma,melanoma
+0203_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0207_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0218_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0228_1_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0228_2_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0228_3_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0228_4_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0228_5_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0229_Dermatoscopic,6,malignant,melanoma,lentigo maligna melanoma,-,melanoma,lentigo maligna
+0230_1_Dermatoscopic,6,malignant,melanoma,lentigo maligna melanoma,-,melanoma,lentigo maligna
+0230_2_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0230_3_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0230_4_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0234_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+159_1_Dermatoscopic,6,malignant,melanoma,lentigo maligna melanoma,-,melanoma,lentigo maligna
+159_2_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+159_3_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+159_4_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+159_5_Dermatoscopic,6,malignant,melanoma,melanoma,-,melanoma,melanoma
+0001_Dermatoscopic,5,malignant,basal cell cancer,non pigmented basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0007_Dermatoscopic,5,malignant,basal cell cancer,pigmented basal cell carcinoma + seborrheic keratosis,-,basal cell cancer,basal cell carcinoma
+0008_Dermatoscopic,5,malignant,basal cell cancer,nodular basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0014_Dermatoscopic,5,malignant,basal cell cancer,nodular basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0020_Dermatoscopic,5,malignant,basal cell cancer,superficial basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0026_Dermatoscopic,5,malignant,basal cell cancer,nodular basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0074_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0077_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0086_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0088_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0089_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0090_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0100_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0109_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0110_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0113_Dermatoscopic,5,malignant,basal cell cancer,nodular basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0119_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0122_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0130_Dermatoscopic,5,malignant,basal cell cancer,nodular basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0145_Dermatoscopic,5,malignant,basal cell cancer,nodular basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0186_1_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0186_2_Dermatoscopic,5,malignant,basal cell cancer,basal cell cancer,-,basal cell cancer,basal cell carcinoma
+0196_Dermatoscopic,5,malignant,basal cell cancer,superficial basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0199_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0219_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0222_1_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0222_2_Dermatoscopic,5,malignant,basal cell cancer,basal cell cancer,-,basal cell cancer,basal cell carcinoma
+0222_3_Dermatoscopic,5,malignant,basal cell cancer,basal cell cancer,-,basal cell cancer,basal cell carcinoma
+0222_4_Dermatoscopic,5,malignant,basal cell cancer,basal cell cancer,-,basal cell cancer,basal cell carcinoma
+0226_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0227_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0238_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0247_1_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0247_2_Dermatoscopic,5,malignant,basal cell cancer,basal cell cancer,-,basal cell cancer,basal cell carcinoma
+0249_Dermatoscopic,5,malignant,basal cell cancer,basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0250_1_Dermatoscopic,5,malignant,basal cell cancer,pigmented basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+0250_2_Dermatoscopic,5,malignant,basal cell cancer,basal cell cancer,-,basal cell cancer,basal cell carcinoma
+144_1_Dermatoscopic,5,malignant,basal cell cancer,pigmented nodular basal cell carcinoma,-,basal cell cancer,basal cell carcinoma
+144_2_Dermatoscopic,5,malignant,basal cell cancer,basal cell cancer,-,basal cell cancer,basal cell carcinoma
+144_3_Dermatoscopic,5,malignant,basal cell cancer,basal cell cancer,-,basal cell cancer,basal cell carcinoma
+0016_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0022_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0025_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0079_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0080_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0081_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0082_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0083_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0084_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0085_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0103_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0108_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0116_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0150_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0151_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0152_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0154_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0155_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0165_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0166_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0171_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0172_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0176_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0181_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0182_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0183_1_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0183_2_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0215_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0216_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0231_1_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0231_2_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0242_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0243_Dermatoscopic,0,benign,seborrheic keratosis,seborrheic keratosis,-,benign/seborrheic keratosis,seborrheic keratosis & pigmented keratoses
+0019_Dermatoscopic,1,benign,dermatofibroma,soft fibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0031_Dermatoscopic,1,benign,dermatofibroma,soft fibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0032_Dermatoscopic,1,benign,dermatofibroma,soft fibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0033_Dermatoscopic,1,benign,dermatofibroma,soft fibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0034_Dermatoscopic,1,benign,dermatofibroma,soft fibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0035_Dermatoscopic,1,benign,dermatofibroma,soft fibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0036_Dermatoscopic,1,benign,dermatofibroma,dermatofibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0037_Dermatoscopic,1,benign,dermatofibroma,dermatofibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0039_Dermatoscopic,1,benign,dermatofibroma,dermatofibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0040_Dermatoscopic,1,benign,dermatofibroma,dermatofibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0107_Dermatoscopic,1,benign,dermatofibroma,fibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0117_Dermatoscopic,1,benign,dermatofibroma,dermatofibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0128_Dermatoscopic,1,benign,dermatofibroma,dermatofibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0191_Dermatoscopic,1,benign,dermatofibroma,dermatofibroma,-,dermatofibroma,dermatofibroma / fibrous lesions
+0004_Dermatoscopic,2,benign,melanocytic nevus,blue nevus,-,melanocytic / benign nevus,blue nevus
+0009_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0010_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0011_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0012_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0013_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0028_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0029_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0038_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0041_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0042_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0043_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0050_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0051_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0052_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0053_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0054_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0055_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0056_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0057_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0058_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0059_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0060_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0061_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0062_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0063_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0064_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0065_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0067_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0068_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0069_Dermatoscopic,2,benign,melanocytic nevus,desmoplastic spitz nevus,-,melanocytic / benign nevus,congenital / special-pattern nevi
+0070_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0071_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0072_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0073_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0076_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0087_Dermatoscopic,2,benign,melanocytic nevus,atypical nevus,-,melanocytic / benign nevus,dysplastic / atypical nevus (clark-type)
+0098_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0099_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0123_Dermatoscopic,2,benign,melanocytic nevus,dysplastic melanocytic nevus (junctional),-,melanocytic / benign nevus,dysplastic / atypical nevus (clark-type)
+0125_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0126_Dermatoscopic,2,benign,melanocytic nevus,atypical melanocytic nevus,-,melanocytic / benign nevus,dysplastic / atypical nevus (clark-type)
+0127_Dermatoscopic,2,benign,melanocytic nevus,blue nevus,-,melanocytic / benign nevus,blue nevus
+0129_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0131_Dermatoscopic,2,benign,melanocytic nevus,blue nevus,-,melanocytic / benign nevus,blue nevus
+0133_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0134_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0139_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0140_1_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0140_2_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0140_3_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0141_Dermatoscopic,2,benign,melanocytic nevus,blue nevus,-,melanocytic / benign nevus,blue nevus
+0142_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0143_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0146_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0147_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0148_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0149_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0156_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0157_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0158_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0160_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0161_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0162_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0163_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0164_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0180_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0184_Dermatoscopic,2,benign,melanocytic nevus,atypical melanocytic nevus,-,melanocytic / benign nevus,dysplastic / atypical nevus (clark-type)
+0185_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0189_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0190_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0192_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0194_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0197_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0198_Dermatoscopic,2,benign,melanocytic nevus,atypical nevus,-,melanocytic / benign nevus,dysplastic / atypical nevus (clark-type)
+0201_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0202_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0204_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0205_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0206_Dermatoscopic,2,benign,melanocytic nevus,atypical nevus,-,melanocytic / benign nevus,dysplastic / atypical nevus (clark-type)
+0208_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0209_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0210_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0211_Dermatoscopic,2,benign,melanocytic nevus,atypical nevus,-,melanocytic / benign nevus,dysplastic / atypical nevus (clark-type)
+0212_Dermatoscopic,2,benign,melanocytic nevus,atypical nevus,-,melanocytic / benign nevus,dysplastic / atypical nevus (clark-type)
+0213_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0214_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0217_Dermatoscopic,2,benign,melanocytic nevus,nevo pediculado,-,melanocytic / benign nevus,benign melanocytic nevus
+0220_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0223_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0224_Dermatoscopic,2,benign,melanocytic nevus,blue nevus,-,melanocytic / benign nevus,blue nevus
+0225_Dermatoscopic,2,benign,melanocytic nevus,blue nevus,-,melanocytic / benign nevus,blue nevus
+0233_Dermatoscopic,2,benign,melanocytic nevus,atypical melanocytic nevus,-,melanocytic / benign nevus,dysplastic / atypical nevus (clark-type)
+0236_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0244_1_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0244_2_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
+0244_3_Dermatoscopic,2,benign,melanocytic nevus,melanocytic nevus,-,melanocytic / benign nevus,benign melanocytic nevus
