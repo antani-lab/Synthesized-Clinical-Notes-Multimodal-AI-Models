@@ -7,6 +7,7 @@ This repository will include models and methods to generate synthetic clinical n
 If you find this repository useful in your research, please cite:
 [1] Marini N., Liang Z., Rajaraman S., Xue Z., Antani S., Mitigating Hallucinations in Synthesized Clinical Texts to Improve Multimodal Deep Learning for Dermatology, Journal of Biomedical Informatics
 
+```
 @article{marini2026mitigating,
   title={Mitigating hallucinations in synthesized clinical texts to improve multimodal deep learning for dermatology},
   author={Marini, Niccolo and Liang, Zhaohui and Rajaraman, Sivaramakrishnan and Xue, Zhiyun and Antani, Sameer},
@@ -15,6 +16,7 @@ If you find this repository useful in your research, please cite:
   year={2026},
   publisher={Elsevier}
 }
+```
 
 [2] Marini N., Liang Z., Rajaraman S., Xue Z., Antani S., Synthesized Clinical Notes Enable Training Robust Multimodal AI Models from Unimodal Dermatology Datasets, under revision
 
