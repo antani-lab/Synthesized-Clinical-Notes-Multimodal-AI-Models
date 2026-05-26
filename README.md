@@ -121,7 +121,9 @@ Section Clinical note synthesis shows the strategies to generate clinical notes.
 
 ### M
 Metadata are used to populate a fixed template.
+```
 “The image is classified within the current_superclass category. Its primary diagnostic class is current_class (class_subclass_suffix). Morphologically, it is characterized by current_description. The lesion falls within the current_match_class (matching_subclass_suffix) spectrum, representing a pattern consistent with this diagnostic group.”
+```
 The elements reported in bold are variables, changing at run-time execution. current_superclass can be benign, malignant, pre-cancerous. current_class represents the lesion class and class_subclass_suffix its subclass (if reported in the metadata). current_description can include additional information. Finally current_match_class and matching_subclass_suffix are repetitions of the class and subclass, using a common vocabulary, as explained in Section Metadata Pre-processing. The same variables are used in the other prompt-based strategies, described in the following paragraphs.
 
 ### L
@@ -130,6 +132,7 @@ Clinical notes obtained from multiple prompts are combined during training.
 #### Prompt 1 (L1): 
 The LLM selects predefined options for symmetry, border type, colors, and dermoscopic structures (e.g., pigment network, dots), expressed as bullet points, ensuring consistency and minimal hallucination. The prompt is split into two roles: instruction (system) and question (user), following modern chat model structures, where the system includes high-level directives (e.g. behavior, constraints, rules), while the user includes the actual query or task. It is used with gpt-4o-mini, MedGemma, SkinGPT4, DermLip. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty. 
 
+```
 **instruction** = “You are a dermatologist. Your task is to describe the content in the image, using dermatologic terminology. You have to compile the structured report, using only the options provided among brackets. Report the category (Symmetric lesion, Border lesion, Color lesion, Dermoscopic structure). Your reply should be within 250 words. Underline explicitly that the lesion is current_superclass and includes a current_class (class_subclass_suffix) and it includes current_description. specific_class_sentence. Do not summarize at the end."
 
 **question** = "Report the following characteristics, choosing only the options among brackets, using the notation letter) (.e.g A), B)):
@@ -148,10 +151,12 @@ Pigment network: Reticular or mesh-like pigmentation.
 Branched streaks: Irregular, atypical branching lines.
 Dots: Small, round dark spots.
 Globules: Larger, clustered round pigmented areas.”
+```
 
 #### Prompt 2 (L2): 
 similar to Prompt 1, it includes less details describing the lesion to characterize it. It is used with gpt-4o-mini, MedGemma, SkinGPT4, DermLip. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty.
 
+```
 **instruction** = "You are a dermatologist. Your task is to describe the content in the uploaded, using medical terminology. Be stick to what you identify, do not explain nature of diseases and do not imply. Your reply should be within 250 words. Underline explicitly that the lesion includes a current_class (class_subclass_suffix), (current_superclass) and some morphological characteristics are current_description. specific_class_sentence. Do not summarize at the end."
 
 **question** = “What Characteristics of the dermatoscopic structure of the skin lesions you identify, among:
@@ -167,23 +172,28 @@ Vesicles/Bullae: Fluid-filled blisters.
 2) Color: The color (e.g., brown, red, black, or pink) of the lesion is described as changes in color can be significant for malignancy. 
 3) Border Definition: Whether the lesion's edges are well-defined or irregular (which can suggest malignancy). 
 4) Symmetry: Whether the lesion is symmetric or asymmetric. Asymmetry may raise concern for malignancy.”
+```
 
 ### Prompt SkinGPT4
 Additional prompts are used for SkinGPT4, aiming to mimic the ones used in the original publication. It includes a version with metadata and without metadata: the component instruction is attached to the prompt in the first case, while it is removed in the latter case. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty.
 Possible prompt options (randomly chosen): 
+```
 - “Describe this image in detail.”,
 - “Take a look at this image and describe what you notice.”,
 -  “Please provide a detailed description of the picture.”,
 -  “Could you describe the contents of this image for me?”
 
 **instruction** = “Underline explicitly that the lesion includes a current_class (class_subclass_suffix), current_superclass and some morphological characteristics are current_description. specific_class_sentence.”
+```
 
 ### Prompt DermLip
 Additional prompts are used for DermLip, aiming to mimic the ones used in the original publication. It includes a version with metadata and without metadata: the component instruction is removed in the latter case. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty.
 
+```
 **prompt** = "Describe the skin lesion concisely (morphology, color, scale, border, location) in one sentence. Conclude with the most likely diagnosis 250 words)."
 
 **instruction** = “Underline explicitly that the lesion includes a current_class (class_subclass_suffix), current_superclass and some morphological characteristics are current_description. specific_class_sentence.”
+```
 
 ---
 
