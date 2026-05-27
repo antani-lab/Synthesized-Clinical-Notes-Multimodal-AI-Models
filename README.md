@@ -1,6 +1,52 @@
 # Synthesized-Clinical-Notes-Multimodal-AI-Models
 This repository will include models and methods to generate synthetic clinical notes describing dermatology images. Clinical notes are paired with images to train a multimodal foundation model, that jointly learns from dermoscopic/clinical images and LLM-generated text reports. The framework supports contrastive learning, cross-modal retrieval, and zero-shot classification.
 
+
+## Table of Contents
+
+- [Reference](#reference)
+- [Requirements](#requirements)
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Datasets](#datasets)
+- [Benchmark LLMs](#benchmark-llms)
+- [State-of-the-art foundation models](#state-of-the-art-foundation-models)
+- [Repository organization](#repository-organization)
+- [Labels adopted](#labels-adopted)
+- [Clinical note generation](#clinical-note-generation)
+  - [M — Template-based](#m)
+  - [L — LLM-based (L1 and L2)](#l)
+  - [Prompt SkinGPT4](#prompt-skingpt4)
+  - [Prompt DermLIP](#prompt-dermlip)
+- [CSV folder](#csv-folder)
+- [Report Types](#report-types--t----type)
+- [Modalities](#modalities--m----modality)
+- [Directory Structure](#directory-structure)
+- [Pipeline](#pipeline)
+  - [Pre-processing: Generate Clinical Reports](#pre-processing-generate-clinical-reports)
+    - [Short Reports](#short-reports-template-based-no-llm-required)
+    - [GPT-based Reports](#gpt-based-reports-openai-api)
+    - [DermLIP Reports](#dermlip-reports-local-open-source-vlm)
+    - [MedGemma Reports](#medgemma-reports-local-open-source-vlm)
+    - [SkinGPT-4 Reports](#skingpt-4-reports-local-llama-based-vlm)
+    - [Common parameters](#common-parameters-all-generation-scripts)
+    - [Recommended generation order](#recommended-generation-order)
+    - [HuggingFace token setup](#huggingface-token-setup)
+    - [SkinGPT-4 setup](#skingpt-4-setup)
+    - [DermLIP setup](#dermlip-setup)
+  - [0. (Optional) Generate PubMed Embeddings](#0-optional-generate-pubmed-embeddings)
+  - [1. Train](#1-train)
+  - [2. Generate Features](#2-generate-features)
+  - [3. Prepare Prompt Features](#3-prepare-prompt-features)
+  - [4. Generate Similarities](#4-generate-similarities)
+  - [5. Retrieval](#5-retrieval)
+  - [6. Zero-Shot Learning](#6-zero-shot-learning)
+  - [7. Generate Text from Image (Decoder)](#7-generate-text-from-image-decoder)
+- [Parameter Reference](#parameter-reference)
+- [Utilities Reference](#utilities-reference)
+- [Pre-trained weights](#pre-trained-weights)
+- [Acknowledgements](#acknowledgements)
+
 ---
 
 ## Reference
@@ -133,9 +179,11 @@ Clinical notes obtained from multiple prompts are combined during training.
 The LLM selects predefined options for symmetry, border type, colors, and dermoscopic structures (e.g., pigment network, dots), expressed as bullet points, ensuring consistency and minimal hallucination. The prompt is split into two roles: instruction (system) and question (user), following modern chat model structures, where the system includes high-level directives (e.g. behavior, constraints, rules), while the user includes the actual query or task. It is used with gpt-4o-mini, MedGemma, SkinGPT4, DermLip. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty. 
 
 ```
-**instruction** = “You are a dermatologist. Your task is to describe the content in the image, using dermatologic terminology. You have to compile the structured report, using only the options provided among brackets. Report the category (Symmetric lesion, Border lesion, Color lesion, Dermoscopic structure). Your reply should be within 250 words. Underline explicitly that the lesion is current_superclass and includes a current_class (class_subclass_suffix) and it includes current_description. specific_class_sentence. Do not summarize at the end."
+instruction = “You are a dermatologist. Your task is to describe the content in the image, using dermatologic terminology. You have to compile the structured report, using only the options provided among brackets.
+Report the category (Symmetric lesion, Border lesion, Color lesion, Dermoscopic structure). Your reply should be within 250 words.
+Underline explicitly that the lesion is current_superclass and includes a current_class (class_subclass_suffix) and it includes current_description. specific_class_sentence. Do not summarize at the end."
 
-**question** = "Report the following characteristics, choosing only the options among brackets, using the notation letter) (.e.g A), B)):
+question = "Report the following characteristics, choosing only the options among brackets, using the notation letter) (.e.g A), B)):
 A)  Asymmetry (only for the skin lesion)
 Symmetric: Color and structure are mirrored across both axes.
 Asymmetric: Uneven color or structure.
@@ -157,9 +205,11 @@ Globules: Larger, clustered round pigmented areas.”
 similar to Prompt 1, it includes less details describing the lesion to characterize it. It is used with gpt-4o-mini, MedGemma, SkinGPT4, DermLip. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty.
 
 ```
-**instruction** = "You are a dermatologist. Your task is to describe the content in the uploaded, using medical terminology. Be stick to what you identify, do not explain nature of diseases and do not imply. Your reply should be within 250 words. Underline explicitly that the lesion includes a current_class (class_subclass_suffix), (current_superclass) and some morphological characteristics are current_description. specific_class_sentence. Do not summarize at the end."
+instruction = "You are a dermatologist. Your task is to describe the content in the uploaded, using medical terminology.
+Be stick to what you identify, do not explain nature of diseases and do not imply. Your reply should be within 250 words.
+Underline explicitly that the lesion includes a current_class (class_subclass_suffix), (current_superclass) and some morphological characteristics are current_description. specific_class_sentence. Do not summarize at the end."
 
-**question** = “What Characteristics of the dermatoscopic structure of the skin lesions you identify, among:
+question = “What Characteristics of the dermatoscopic structure of the skin lesions you identify, among:
 1) Type of Lesion: The report might describe whether the lesion is benign (e.g., mole, freckle) or suspicious for malignancy (e.g., melanoma, basal cell carcinoma). 
 Common types of lesions include: 
 Macules: Flat spots on the skin. 
@@ -175,7 +225,8 @@ Vesicles/Bullae: Fluid-filled blisters.
 ```
 
 ### Prompt SkinGPT4
-Additional prompts are used for SkinGPT4, aiming to mimic the ones used in the original publication. It includes a version with metadata and without metadata: the component instruction is attached to the prompt in the first case, while it is removed in the latter case. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty.
+Additional prompts are used for SkinGPT4, aiming to mimic the ones used in the original publication. It includes a version with metadata and without metadata: the component instruction is attached to the prompt in the first case, while it is removed in the latter case. 
+Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty.
 Possible prompt options (randomly chosen): 
 ```
 - “Describe this image in detail.”,
@@ -183,16 +234,16 @@ Possible prompt options (randomly chosen):
 -  “Please provide a detailed description of the picture.”,
 -  “Could you describe the contents of this image for me?”
 
-**instruction** = “Underline explicitly that the lesion includes a current_class (class_subclass_suffix), current_superclass and some morphological characteristics are current_description. specific_class_sentence.”
+instruction = “Underline explicitly that the lesion includes a current_class (class_subclass_suffix), current_superclass and some morphological characteristics are current_description. specific_class_sentence.”
 ```
 
 ### Prompt DermLip
 Additional prompts are used for DermLip, aiming to mimic the ones used in the original publication. It includes a version with metadata and without metadata: the component instruction is removed in the latter case. Variable values are highlighted in bold and are described in the M paragraph, except specific_class_sentences, which can include either an additional lesion description, depending on the original metadata, or be empty.
 
 ```
-**prompt** = "Describe the skin lesion concisely (morphology, color, scale, border, location) in one sentence. Conclude with the most likely diagnosis 250 words)."
+prompt = "Describe the skin lesion concisely (morphology, color, scale, border, location) in one sentence. Conclude with the most likely diagnosis 250 words)."
 
-**instruction** = “Underline explicitly that the lesion includes a current_class (class_subclass_suffix), current_superclass and some morphological characteristics are current_description. specific_class_sentence.”
+instruction = “Underline explicitly that the lesion includes a current_class (class_subclass_suffix), current_superclass and some morphological characteristics are current_description. specific_class_sentence.”
 ```
 
 ---
