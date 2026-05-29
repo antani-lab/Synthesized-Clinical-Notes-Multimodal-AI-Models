@@ -51,6 +51,7 @@ This repository will include models and methods to generate synthetic clinical n
 
 ## Reference
 If you find this repository useful in your research, please cite:
+
 [1] Marini N., Liang Z., Rajaraman S., Xue Z., Antani S., Mitigating Hallucinations in Synthesized Clinical Texts to Improve Multimodal Deep Learning for Dermatology, Journal of Biomedical Informatics
 
 ```
