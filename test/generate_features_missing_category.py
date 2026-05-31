@@ -51,7 +51,7 @@ parser.add_argument('-k', '--KEYWORDS', help='train on keywords',type=str, defau
 parser.add_argument('-a', '--AUGMENTATION', help='report augmentation',type=str, default='False')
 parser.add_argument('-i', '--INPUT', help='data to analyze',type=str, default='abcd')
 parser.add_argument('-p', '--weights', help='algorithm for pre-trained weights (PanDerm)',type=str, default='')
-parser.add_argument('-i', '--DATA_FOLDER', help='path of the folder where to images are stored',type=str, default='')
+parser.add_argument('-f', '--DATA_FOLDER', help='path of the folder where to images are stored',type=str, default='')
 
 args = parser.parse_args()
 
