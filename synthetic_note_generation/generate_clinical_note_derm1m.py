@@ -58,7 +58,7 @@ os.environ["TRANSFORMERS_CACHE"] = HUGGINGFACE_CACHE
 os.environ["HF_DATASETS_CACHE"] = HUGGINGFACE_CACHE + "/datasets"
 os.environ["HF_HUB_CACHE"] = HUGGINGFACE_CACHE + "/hub"
 
-token_fname = HUGGINGFACE_CACHE "/token.txt"
+token_fname = HUGGINGFACE_CACHE + "/token.txt"
 
 with open(token_fname, 'r', encoding='utf-8', errors='ignore') as file:
     #with open(ID_txt, 'r') as file:
