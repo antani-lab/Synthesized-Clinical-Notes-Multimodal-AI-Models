@@ -8,6 +8,9 @@ import os
 import argparse
 import warnings
 #warnings.filterwarnings("ignore")
+sys.path.append("../utils/")
+sys.path.append("../models/")
+
 from enum_multi import ALG, PHASE, TYPE_DATA, MOD, COMPONENTS, REPORTS
 import utils_data
 import random
