@@ -10,6 +10,8 @@ from skimage import io, color, exposure
 import argparse
 
 import shutil
+sys.path.append("../utils/")
+
 from enum_type import TYPE_IMAGE
 from methods_preprocess import find_non_black_square_region, crop_if_too_big, crop_large_side, crop_image
 from methods_preprocess import crop_image_by_vignette, get_contrast, get_sharpening, dullrazor

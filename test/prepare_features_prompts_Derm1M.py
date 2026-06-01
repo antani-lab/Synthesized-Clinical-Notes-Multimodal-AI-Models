@@ -18,6 +18,9 @@ import argparse
 from tqdm import tqdm
 
 import random
+sys.path.append("../utils/")
+sys.path.append("../models/")
+
 import utils_zero_shot_learning
 from metrics_multiclass import accuracy_score, kappa_score, f1_scores, precisions, recalls
 

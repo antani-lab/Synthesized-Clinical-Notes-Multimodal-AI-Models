@@ -11,6 +11,8 @@ import cv2
 import argparse
 from tqdm import tqdm
 import time
+sys.path.append("../utils/")
+
 from enum_multi import DATASET_TO_USE
 import textwrap
 

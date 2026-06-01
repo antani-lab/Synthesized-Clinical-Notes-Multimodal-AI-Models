@@ -5,7 +5,8 @@ import torch
 
 import sys
 #sys.path.append("/home/marinin2/Documents/skin_lesion/dermlip-gpt2-captioner/")
-sys.path.append("/data/marinin2/skin_lesion/dermlip-gpt2-captioner/")
+repo_path = "../DermLIP/"
+sys.path.append(repo_path)
 
 from pathlib import Path
 from inference_min import generate, load_model
@@ -15,6 +16,8 @@ from transformers import CLIPModel   # <-- key addition
 import pandas as pd
 from PIL import Image
 import argparse
+sys.path.append("../utils/")
+
 from enum_multi import DATASET_TO_USE
 from tqdm import tqdm
 import time

@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 import os, sys
+sys.path.append("../utils/")
+sys.path.append("../models/")
+
 from enum_multi import MOD, PHASE, TYPE_REPORT, REPORTS
 from tqdm import tqdm
 import argparse

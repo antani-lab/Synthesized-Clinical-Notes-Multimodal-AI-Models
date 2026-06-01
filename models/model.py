@@ -10,10 +10,10 @@ import argparse
 import warnings
 import torch.nn as nn
 warnings.filterwarnings("ignore")
+sys.path.append("../utils/")
+
 from enum_multi import ALG, PHASE, NETWORK, MOD, QUESTION, vit_pool
 from transformers import BertModel
-import vision_transformer
-import utils_transformer
 from functools import partial
 from transformers import AutoTokenizer
 from vit_pytorch import ViT

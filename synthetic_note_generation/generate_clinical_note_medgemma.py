@@ -11,6 +11,8 @@ from transformers import AutoProcessor, AutoModelForImageTextToText
 import pandas as pd
 from PIL import Image
 import argparse
+sys.path.append("../utils/")
+
 from enum_multi import DATASET_TO_USE
 from tqdm import tqdm
 import time

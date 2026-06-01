@@ -9,6 +9,8 @@ import argparse
 import warnings
 warnings.filterwarnings("ignore")
 from torchvision import transforms
+sys.path.append("../utils/")
+
 from enum_multi import PHASE, MOD, COMPONENTS, REPORTS
 import random
 import data_augmentation
